@@ -85,6 +85,7 @@ public class UsuarioController {
     // =======================================================
     // BUSCAR
     // =======================================================
+
     @GetMapping
     public ResponseEntity<UsuarioDTOResponse> buscarPorEmail(@RequestParam String email) {
         return ResponseEntity.ok(usuarioService.buscarPorEmail(email));
